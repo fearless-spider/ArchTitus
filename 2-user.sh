@@ -18,8 +18,12 @@ cd ${HOME}/yay
 makepkg -si --noconfirm
 cd ~
 touch "$HOME/.cache/zshhistory"
-git clone "https://github.com/ChrisTitusTech/zsh"
+wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh install.sh
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
+git clone https://github.com/cdimascio/lambda-zsh-theme
+cp lambda-zsh-theme/cdimascio-lambda.zsh-theme $ZSH_CUSTOM/themes
+git clone https://github.com/fearless-spider/zsh
 ln -s "$HOME/zsh/.zshrc" $HOME/.zshrc
 
 PKGS=(
