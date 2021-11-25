@@ -58,7 +58,7 @@ PKGS=(
 'xdg-utils'
 'nss'
 'dbeaver' # Database client
-'postgres'
+'postgresql'
 'docker'
 'nvm'
 'obs-studio'
@@ -78,8 +78,8 @@ konsave -a kde
 # Jetbrains
 wget -c https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-1.22.10774.tar.gz
 tar zxzf jetbrains-toolbox-1.22.10774.tar.gz
-cp -r jetbrains-toolbox-1.22.10774 /opt/
-ln -s /opt/jetbrains-toolbox-1.22.10774/jetbrains-toolbox /usr/bin/jetbrains-toolbox
+sudo cp -r jetbrains-toolbox-1.22.10774 /opt/
+sudo ln -s /opt/jetbrains-toolbox-1.22.10774/jetbrains-toolbox /usr/bin/jetbrains-toolbox
 jetbrains-toolbox
 
 # Databases
