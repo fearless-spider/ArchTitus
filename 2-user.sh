@@ -57,6 +57,7 @@ PKGS=(
 'xdg-utils'
 'nss'
 'dbeaver' # Database client
+'postgres'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -70,11 +71,17 @@ konsave -i $HOME/ArchTitus/kde.knsv
 sleep 1
 konsave -a kde
 
+# Jetbrains
 wget -c https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-1.22.10774.tar.gz
 tar zxzf jetbrains-toolbox-1.22.10774.tar.gz
 cp -r jetbrains-toolbox-1.22.10774 /opt/
 ln -s /opt/jetbrains-toolbox-1.22.10774/jetbrains-toolbox /usr/bin/jetbrains-toolbox
 jetbrains-toolbox
+
+# Databases
+sudo -iu postgres
+initdb -D /var/lib/postgres/data
+exit
 
 echo -e "\nDone!\n"
 exit
