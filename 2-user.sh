@@ -29,7 +29,7 @@ ln -s "$HOME/zsh/.zshrc" $HOME/.zshrc
 PKGS=(
 'autojump'
 'awesome-terminal-fonts'
-'brave-bin' # Brave Browser
+'firefox-bin' # Brave Browser
 'dxvk-bin' # DXVK DirectX to Vulcan
 'github-desktop-bin' # Github Desktop sync
 'lightly-git'
@@ -64,6 +64,7 @@ PKGS=(
 'postgres'
 'docker'
 'nvm'
+'obs-studio'
 )
 
 for PKG in "${PKGS[@]}"; do
