@@ -20,7 +20,7 @@ cd ~
 touch "$HOME/.cache/zshhistory"
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
+# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
 git clone https://github.com/cdimascio/lambda-zsh-theme
 cp lambda-zsh-theme/cdimascio-lambda.zsh-theme $ZSH_CUSTOM/themes
 git clone https://github.com/fearless-spider/zsh
