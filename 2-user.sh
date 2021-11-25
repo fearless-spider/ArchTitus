@@ -62,6 +62,7 @@ PKGS=(
 'nss'
 'dbeaver' # Database client
 'postgres'
+'docker'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -86,6 +87,9 @@ jetbrains-toolbox
 sudo -iu postgres
 initdb -D /var/lib/postgres/data
 exit
+
+# Docker
+sudo usermod -aG docker $USER
 
 echo -e "\nDone!\n"
 exit

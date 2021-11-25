@@ -70,6 +70,7 @@ PKGS=(
 'autoconf' # build
 'automake' # build
 'base'
+'base-devel'
 'bash-completion'
 'bind'
 'binutils'
@@ -103,7 +104,6 @@ PKGS=(
 'fuseiso'
 'gamemode'
 'gcc'
-'gimp' # Photo editing
 'git'
 'gparted' # partition management
 'gptfdisk'
