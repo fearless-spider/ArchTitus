@@ -63,6 +63,7 @@ PKGS=(
 'dbeaver' # Database client
 'postgres'
 'docker'
+'nvm'
 )
 
 for PKG in "${PKGS[@]}"; do
@@ -90,6 +91,9 @@ exit
 
 # Docker
 sudo usermod -aG docker $USER
+
+# NVM
+echo 'source /usr/share/nvm/init-nvm.sh' >> ~/.zshrc
 
 echo -e "\nDone!\n"
 exit
