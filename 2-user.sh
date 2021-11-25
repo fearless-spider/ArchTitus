@@ -50,12 +50,13 @@ PKGS=(
 'zoom' # video conferences
 'snap-pac'
 'fuse'
-'glib2'
+'glib2' # JetBrains Toolbox depedency
 'libxslt'
 'libxss'
 'xcb-util-keysyms'
 'xdg-utils'
 'nss'
+'dbeaver' # Database client
 )
 
 for PKG in "${PKGS[@]}"; do
