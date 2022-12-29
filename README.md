@@ -1,4 +1,11 @@
+# Archived and No longer maintained. 
+
+Due to the constant updates and time it takes to maintain this script I will no longer be updating it. Free free to fork it and take what you want from here. There has been some fantastic contributions over the past year and I learned a lot while making this project. 
+
+Thank you!
+
 # ArchTitus Installer Script
+[![GitHub Super-Linter](https://github.com/ChrisTitusTech/ArchTitus/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 <img src="https://i.imgur.com/YiNMnan.png" />
 
@@ -9,7 +16,7 @@ This README contains the steps I do to install and configure a fully-functional 
 
 Download ArchISO from <https://archlinux.org/download/> and put on a USB drive with [Etcher](https://www.balena.io/etcher/), [Ventoy](https://www.ventoy.net/en/index.html), or [Rufus](https://rufus.ie/en/)
 
-If you don't want to build using this script I did create an image @ <https://www.christitus.com/arch-titus>
+If you don't want to build using this script I did create an image @ <https://cttstore.com/arch-titus>
 
 ## Boot Arch ISO
 
@@ -23,13 +30,21 @@ cd ArchTitus
 ```
 
 ### System Description
-This is completely automated arch install of the KDE desktop environment on arch using all the packages I use on a daily basis. 
+This is completely automated arch install. It includes prompts to select your desired desktop environment, window manager, AUR helper, and whether to do a full or minimal install. The KDE desktop environment on arch includes all the packages I use on a daily basis, as well as some customizations.
 
 ## Troubleshooting
 
-__[Arch Linux Installation Guide](https://github.com/rickellis/Arch-Linux-Install-Guide)__
+__[Arch Linux RickEllis Installation Guide](https://github.com/rickellis/Arch-Linux-Install-Guide)__
 
+__[Arch Linux Wiki Installation Guide](https://wiki.archlinux.org/title/Installation_guide)__
+
+The main script will generate .log files for every script that is run as part of the installation process. These log files contain the terminal output so you can review any warnings or errors that occurred during installation and aid in troubleshooting. 
 ### No Wifi
+
+You can check if the WiFi is blocked by running `rfkill list`.
+If it says **Soft blocked: yes**, then run `rfkill unblock wifi`
+
+After unblocking the WiFi, you can connect to it. Go through these 5 steps:
 
 #1: Run `iwctl`
 
@@ -39,8 +54,16 @@ __[Arch Linux Installation Guide](https://github.com/rickellis/Arch-Linux-Instal
 
 #4: Run `station [device name] get-networks`
 
-#5: Find your network, and run `station [device name] connect [network name]`, enter your password and run `exit`. You can test if you have internet connection by running `ping google.com`. 
+#5: Find your network, and run `station [device name] connect [network name]`, enter your password and run `exit`. You can test if you have internet connection by running `ping google.com`, and then Press Ctrl and C to stop the ping test.
 
+## Reporting Issues
+
+An issue is easier to resolve if it contains a few important pieces of information.
+1. Chosen configuration from /configs/setup.conf (DONT INCLUDE PASSWORDS)
+1. Errors seen in .log files
+1. What commit/branch you used
+1. Where you were installing (VMWare, Virtualbox, Virt-Manager, Baremetal, etc)
+    1. If a VM, what was the configuration used.
 ## Credits
 
 - Original packages script was a post install cleanup script called ArchMatic located here: https://github.com/rickellis/ArchMatic

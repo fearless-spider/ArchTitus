@@ -20,11 +20,11 @@ cd ~
 touch "$HOME/.cache/zshhistory"
 wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 sh install.sh
-# git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
-git clone https://github.com/cdimascio/lambda-zsh-theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerlevel10k
 cp "$HOME/lambda-zsh-theme/cdimascio-lambda.zsh-theme" $ZSH_CUSTOM/themes
-git clone https://github.com/fearless-spider/zsh
-ln -s "$HOME/zsh/.zshrc" $HOME/.zshrc
+git clone git@github.com:fearlessspider/dotfiles.git
+ln -s "$HOME/dotfiles/.zshrc" $HOME/.zshrc
+ln -s "$HOME/dotfiles/.p10k.zsh" $HOME/.p10k.zsh
 
 PKGS=(
 'autojump'
@@ -74,13 +74,6 @@ pip install konsave
 konsave -i $HOME/ArchTitus/kde.knsv
 sleep 1
 konsave -a kde
-
-# Jetbrains
-wget -c https://download-cdn.jetbrains.com/toolbox/jetbrains-toolbox-1.22.10774.tar.gz
-tar zxzf jetbrains-toolbox-1.22.10774.tar.gz
-sudo cp -r jetbrains-toolbox-1.22.10774 /opt/
-sudo ln -s /opt/jetbrains-toolbox-1.22.10774/jetbrains-toolbox /usr/bin/jetbrains-toolbox
-jetbrains-toolbox
 
 # Databases
 sudo -iu postgres
