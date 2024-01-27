@@ -1,8 +1,19 @@
-# Archived and No longer maintained. 
+# Resurrecting Project 
 
-Due to the constant updates and time it takes to maintain this script I will no longer be updating it. Free free to fork it and take what you want from here. There has been some fantastic contributions over the past year and I learned a lot while making this project. 
+I'm changing the scope of the project to only do minimal installs and no longer offer the options for the install script. As the official arch install script has become better this one is no longer needed. However, I still want a script that installs my two flavors of arch. 
 
-Thank you!
+- DWM + Xorg
+- Hyprland + Wayland
+
+This is currently a work in progress and check the branchs for the old versions.
+
+New single command quicklaunch
+
+```
+bash <(curl -L christitus.com/archtitus)
+```
+
+Old Script with all the customizations is located in the (all-in-one-2022 branch) here: <https://github.com/ChrisTitusTech/ArchTitus/tree/all-in-one-2022-script>
 
 # ArchTitus Installer Script
 [![GitHub Super-Linter](https://github.com/ChrisTitusTech/ArchTitus/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
@@ -68,3 +79,7 @@ An issue is easier to resolve if it contains a few important pieces of informati
 
 - Original packages script was a post install cleanup script called ArchMatic located here: https://github.com/rickellis/ArchMatic
 - Thank you to all the folks that helped during the creation from YouTube Chat! Here are all those Livestreams showing the creation: <https://www.youtube.com/watch?v=IkMCtkDIhe8&list=PLc7fktTRMBowNaBTsDHlL6X3P3ViX3tYg>
+
+## GitHub Stats
+
+![Alt](https://repobeats.axiom.co/api/embed/ab6e7aa2540b5510906424e555a6773dfc3a76af.svg "Repobeats analytics image")
